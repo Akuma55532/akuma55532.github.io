@@ -4,15 +4,19 @@ date: 2026-07-11 23:35:30
 tags:
 ---
 
-# Life is short, I use AI.
+# 使用AI
 
-## ccswitch安装以及配置
+Life is short, I use AI.
+
+## CCSwicth+Codex
+
+### ccswitch安装以及配置
 
 ccswitch的github地址: [https://github.com/farion1231/cc-switch/releases](https://github.com/farion1231/cc-switch/releases)
 
 用windows的话就选择CC-Switch-xxx-Windows.msi(x为版本号)即可(建议使用cc-switch v3.13.0)
 
-### 导入配置
+#### 导入配置
 
 安装好之后导入openai的配置，刚开始没有需要新建
 
@@ -73,3 +77,49 @@ VScode
 ![](https://cloudflare-imgbed.wx3515753265.workers.dev/file/blog/使用AI/1783921564528_SnowShot_2026-07-11_19-21-26.png)
 
 ![](https://cloudflare-imgbed.wx3515753265.workers.dev/file/blog/使用AI/1783921565824_SnowShot_2026-07-11_19-25-24.png)
+
+## Deepseek+dsh
+
+deepeseek前段时间出了自研的通用agent产品deepseek-harness，简称dsh，这里记录怎么去使用他。
+
+### 前置环境
+
+需要使用到nodejs，我建议直接使用22版本即可。
+
+网址：[https://nodejs.org/zh-cn/download](https://nodejs.org/zh-cn/download)
+
+![image1.png](https://cloudflare-imgbed.wx3515753265.workers.dev/file/blog/使用AI/1789121967560_image1.png)
+
+### 买点token
+
+接着去deepseek开放平台充点钱，没有账号的话估计要先注册。
+
+网址：[https://platform.deepseek.com/usage](https://platform.deepseek.com/usage)
+
+![image2.png](https://cloudflare-imgbed.wx3515753265.workers.dev/file/blog/使用AI/1789121960862_image2.png)
+
+### 使用dsh
+
+最好是跟着教程学一下
+
+网址：[https://deepseek-harness.github.io/deepseek-harness/guide/quickstart](https://deepseek-harness.github.io/deepseek-harness/guide/quickstart)
+
+下面是最速教程
+
+打开笔记本的powershell/cmd，输入下面命令，直接从云端下载最新版本的dsh并且在你本地启动
+
+~~~shell
+npx @deepseek-ai/dsh web
+~~~
+
+这时候需要一个deepseek密钥
+
+然后回到deepseek开放平台创建一个密钥，再将密钥填写进去即可。
+
+![image3.png](https://cloudflare-imgbed.wx3515753265.workers.dev/file/blog/使用AI/1789121960374_image3.png)
+
+![image4.png](https://cloudflare-imgbed.wx3515753265.workers.dev/file/blog/使用AI/1789121965008_image4.png)
+
+如果你不小心关掉了网页，也可以在终端摁住`Ctrl`然后点击这个网址。
+
+![image5.png](https://cloudflare-imgbed.wx3515753265.workers.dev/file/blog/使用AI/1789121968623_image5.png)

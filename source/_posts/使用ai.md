@@ -54,6 +54,10 @@ http://192.210.137.244:8317/v1
 
 点击`保存`之后就可以在vscode中使用了，这时候我们的vscode的codex插件会显示模型`自定义`是因为gpt5.6在还没有更新端，但是不会妨碍我们使用。
 
+## 使用过程的一些注意
+
+因为我们使用的是 `本地codex -> vps上的cli-proxy-api服务 -> chatgpt服务器` 这样的一个传播路径，所以我们的供应商需要选择 `自定义`,这就要求我们的 `config.toml` 中一定要有 `model.provider=custom`这一项，否则本地codex会直接向chatgpt服务器发送对话请求，这一定会是失败的。 
+
 ## 在vscode中使用codex/GPT
 
 打开vscode搜索codex插件并安装

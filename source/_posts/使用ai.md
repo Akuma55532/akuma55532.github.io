@@ -56,7 +56,14 @@ http://192.210.137.244:8317/v1
 
 ## 使用过程的一些注意
 
+---
+
 因为我们使用的是 `本地codex -> vps上的cli-proxy-api服务 -> chatgpt服务器` 这样的一个传播路径，所以我们的供应商需要选择 `自定义`,这就要求我们的 `config.toml` 中一定要有 `model.provider=custom`这一项，否则本地codex会直接向chatgpt服务器发送对话请求，这一定会是失败的。 
+
+---
+
+如果嫌弃历史对话太多了，那你可以在 `C:\Users\你的用户名\.codex\sessions` 这个文件夹下面找到历史对话，清空不想要的对话就好了。
+
 
 ## 在vscode中使用codex/GPT
 
